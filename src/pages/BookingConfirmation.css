@@ -1,0 +1,315 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bookingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+  overflow: auto;
+}
+
+.footer {
+  margin-top: auto;
+}
+.site-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.bookingForm {
+  width: 72%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary {
+  width: 23%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summaryHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summaryRow.total {
+  margin-top: 16px;
+  border-top: 2px solid #eaeaea;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.summaryRow.pending {
+  color: #ff6b6b;
+}
+
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 8px 0;
+}
+
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.guest-details .ant-card {
+  width: 100%;
+}
+
+/* .guest-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+
+.add-guest-button {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.summaryItem.total {
+  font-weight: bold;
+}
+
+.summaryItem.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.summaryItem.pending {
+  color: red;
+  font-weight: bold;
+}
+
+.footer-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.proceed-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.guest-table {
+  margin-top: 20px;
+}
+
+.ant-table {
+  background-color: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  font-weight: bold;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid #ddd;
+}
+.full-width-guest {
+  width: 100%;
+}
+
+
+.full-width-transaction {
+  width: 100%;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: #f0f2f5;
+}
+
+.add-guest-button {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+.blue-button {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #003a8c;
+  text-decoration: none;
+}
+
+.blue-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.bookingSummary {
+  width: 35%;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summaryHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.summaryTable {
+  width: 100%;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summaryRow.total {
+  margin-top: 16px;
+  border-top: 2px solid #eaeaea;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.summaryRow.pending {
+  color: #ff6b6b;
+}
+
+hr {
+  margin: 8px 0;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+}
+.primaryButton {
+  background-color: #007bff; /* Primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #0056b3; /* Darken color on hover */
+}
+.secondaryButton {
+  background-color: #f8f9fa; /* Light color for secondary actions */
+  color: #007bff; /* Match primary color for text */
+  border: 1px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #e2e6ea; /* Slightly darken on hover */
+}
+
+/* Icon styling */
+.buttonIcon {
+  margin-right: 5px;
+}
+
+
+.guest-edit-card {
+  background: #f0f2f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guest-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guest-info-item span {
+  font-weight: 500;
+}
+
+/* Additional styling for inputs, buttons, etc., to match your design system */

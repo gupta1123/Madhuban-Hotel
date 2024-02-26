@@ -1,0 +1,91 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 300px;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #00f;
+  color: #fff;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-footer {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.icons {
+  font-size: 24px;
+}
+
+.icons span {
+  padding: 0 5px;
+}
+
+.card-header {
+  height: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.card-body {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-footer {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.guest-name {
+  top: 73px;
+  left: 36px;
+  display: inline-block;
+  width: 168px;
+  height: 18px;
+}
+.card-footer .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer .icons .icon-group {
+  display: flex;
+  padding-right: 20px;
+}
+
+.card-footer .icons .sound-icon {
+  color: red;
+}
+
+.icon-group .fa {
+  font-size: smaller;
+}
+
+.icon-padding {
+  padding-right: 10px;
+}

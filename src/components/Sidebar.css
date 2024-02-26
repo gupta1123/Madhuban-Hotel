@@ -1,0 +1,44 @@
+.sider {
+  background-color: #001529;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ position: fixed;
+  overflow: auto; /* Allows the content of the sider to scroll if it exceeds the viewport height */
+  position: fixed; /* Fixes the position of the sider */
+  left: 0; /* Aligns the sider to the left edge of the viewport */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #001529;
+  color: #fff;
+  overflow-y: auto;
+}
+.product-name {
+  padding: 16px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid #001529;
+}
+
+.menu-item:hover {
+  background-color: #1890ff;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.settings-icon {
+  position: absolute;
+  bottom: 10px; /* Adjust the bottom space as needed */
+  left: 16px; /* Adjust the left position as needed */
+}

@@ -1,0 +1,47 @@
+.booking-detail {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .booking-detail strong {
+    flex-basis: 50%;
+  }
+  
+  .booking-detail span {
+    flex-basis: 50%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .booking-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .booking-name {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .booking-detail {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .booking-detail strong {
+    flex-basis: 50%;
+  }
+  
+  .booking-detail span {
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

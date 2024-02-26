@@ -1,0 +1,27 @@
+
+.extend-modal .modal-button {
+    margin-right: 8px;
+    border-radius: 5px; /* Rounded corners */
+  }
+ 
+  .extend-modal .modal-button.save {
+    background-color: #4a90e2; /* Blue */
+    border-color: #4a90e2;
+    color: white;
+  }
+ 
+  .extend-modal .date-button {
+    margin: 0 5px;
+    color: #4a90e2; /* Blue icons */
+  }
+ 
+  .extend-modal .date-picker {
+    margin: 0 10px;
+  }
+ 
+  .date-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }

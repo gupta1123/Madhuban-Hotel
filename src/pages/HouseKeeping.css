@@ -1,0 +1,343 @@
+.ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #1890ff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: center;
+  color: #333;
+  padding: 8px;
+}
+
+.ant-table-tbody > tr > td[data-status="Pending"] {
+  background-color: #ffd700;
+  color: black;
+}
+
+.ant-table-tbody > tr > td[data-status="Work in Progress"] {
+  background-color: #ff8c00;
+  color: white;
+}
+
+.ant-table-tbody > tr > td[data-status="Completed"] {
+  background-color: #32cd32;
+  color: white;
+}
+
+.ant-table-row:hover > td {
+  background-color: #e6f7ff;
+}
+
+.filter-container {
+  margin: 20px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  height: 120px;
+}
+
+.ant-input,
+.ant-select-selector {
+  border-radius: 4px;
+  height: 32px;
+  width: 100%;
+}
+
+.filter-container > button,
+.house-keeping-container > button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.house-keeping-container > button {
+  float: right;
+}
+.custom-notification {
+  background-color: #f4f4f4;
+
+  color: #333;
+
+  padding: 16px;
+
+  border-radius: 8px;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.custom-notification a {
+  color: #1890ff;
+
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.kanban-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.kanban-column {
+  flex: 2;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.kanban-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.kanban-column-content {
+  min-height: 400px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: auto;
+  transition: background-color 0.3s ease;
+}
+
+.kanban-card {
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.kanban-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  font-size: 18px; /* Larger for emphasis */
+  font-weight: bold;
+  margin-bottom: 8px; /* Space between title and details */
+}
+
+.task-priority {
+  font-size: 12px;
+  color: #ff5722; /* Adjust the color as needed */
+}
+
+.task-details {
+  font-size: 14px;
+}
+
+.task-status {
+  margin-top: 8px;
+}
+
+.kanban-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* Kanban columns */
+.kanban-column {
+  flex: 2;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.kanban-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.kanban-column-content {
+  min-height: 400px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-y: auto;
+  transition: background-color 0.3s ease;
+}
+
+/* Kanban cards */
+.kanban-card {
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  position: relative; /* Ensure the card remains visible during drag */
+}
+
+.kanban-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Task header and details */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.task-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.task-priority {
+  font-size: 12px;
+  color: #ff5722; /* Adjust the color as needed */
+}
+
+.task-details {
+  font-size: 14px;
+}
+.task-detail {
+  font-size: 14px; /* Comfortable reading size */
+  color: #666; /* Subdued color for less critical info */
+  margin-bottom: 4px; /* Tidy separation */
+}
+.task-status {
+  margin-top: 8px;
+}
+
+/* Styles for smooth drag-and-drop */
+.kanban-card:active {
+  cursor: grabbing;
+}
+.task-actions {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the start */
+  flex-wrap: wrap; /* Wrap buttons to the next line on small screens */
+  gap: 8px; /* Space between buttons */
+}
+
+/* Hide the default plus icon during drag */
+.kanban-card::before {
+  content: none !important;
+}
+.editable-row td {
+  padding: 8px;
+  border: 1px solid #e8e8e8;
+}
+.tag-without-box {
+  border: none;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-header-left,
+.card-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.card-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info {
+  margin-right: 16px;
+}
+
+.card-info-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-info-content {
+  font-size: 12px;
+  color: #666;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+}
+
+.card-action-button {
+  margin-left: 8px;
+}
+
+/* Adjustments for color coding, icons, and interactive elements as needed */

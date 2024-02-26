@@ -1,0 +1,55 @@
+.settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f2f5; /* Soft background color */
+}
+
+.settings-card {
+  max-width: 400px; /* Smaller card for better mobile layout */
+  width: 100%; /* Responsive width */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border-radius: 8px; /* Rounded corners for the card */
+  padding: 20px; /* Inner padding */
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px; /* Reduced spacing for a cleaner look */
+}
+
+.setting-item > .ant-input,
+.setting-item > .ant-select-selector {
+  margin-left: 12px; /* Slightly reduced space between icon and input/select */
+  flex-grow: 1; /* Make input/select take up available space */
+}
+
+.setting-icon {
+  color: #1890ff; /* Match Ant Design primary color */
+  font-size: 20px; /* Slightly larger icons */
+}
+
+.setting-item > label {
+  font-weight: 500; /* Make labels bold */
+}
+
+.space-align-block {
+  display: flex;
+  justify-content: space-between; /* Space between Sign Out and Save buttons */
+  width: 100%;
+  margin-top: 20px; /* Space between form items and buttons */
+}
+
+/* Modal Customization */
+.ant-modal-body {
+  font-size: 16px; /* Larger text in the modal for readability */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .settings-card {
+    margin: 10px; /* Smaller margin for smaller screens */
+  }
+}

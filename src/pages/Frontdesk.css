@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px; /* Adjust the gap as needed */
+  padding: 20px;
+  width: calc(100% - 40px); /* Subtract the padding from the total width */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  margin: 0 auto; /* Center the grid on the page */
+  flex-wrap: wrap; /* Wrap to a new row when necessary */
+  justify-content: space-between; /* Distribute cards evenly */
+}
+
+
+.card {
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  /* Rest of your card styles */
+}
+
+.pill-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* Gives the pill shape */
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust the colors for each button state */
+.pill-button-occupied {
+  background-color: #92deba;
+}
+
+.pill-button-vacant {
+  background-color: #fdddb3;
+}
+
+.pill-button-reserved {
+  background-color: #f9a63a;
+}
+
+.pill-button-outOfOrder {
+  background-color: #5d6679;
+}
+
+.pill-button-dueOut {
+  background-color: #b6d3fa;
+}
+
+.pill-button-dirty {
+  background-color: #aa3028;
+}
+.date-picker {
+  width: 60%p; /* Adjust the width as needed */
+}
+.dropdown {
+  width: 200px; /* Adjust the width as needed */
+}

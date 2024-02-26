@@ -1,0 +1,249 @@
+/* Add margin to the filter card container */
+.filter-container {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Add margin to each filter card */
+.filter-card {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+
+/* Add margin to the room cards container (Row) */
+.room-cards {
+  margin-top: 20px; /* Adjust the value as needed */
+}
+
+/* Add margin to each room card (Col) */
+.room-card {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #ddd;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 200px;
+}
+
+.room-containers {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.room-container {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.room-container:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filter-card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.filter-card:last-child {
+  margin-right: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.5px);
+  z-index: 1000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.page-link:hover {
+  background-color: #f8f8f8;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-number {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  background: transparent;
+  cursor: pointer;
+}
+
+.page-number.active,
+.page-number:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-number:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.search-bar {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 200px;
+  display: block;
+}
+
+.edit-actions,
+.view-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ant-input {
+  max-width: 100%;
+  white-space: normal;
+}
+.table-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.ant-table-thead th {
+  background-color: #f0f0f0; 
+  color: #333; 
+}
+.ant-table-tbody tr:hover {
+  background-color: #e6f7ff; 
+  cursor: pointer; 
+}
+.ant-pagination {
+  text-align: center; 
+}
+
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next {
+  border-color: #1890ff; 
+}
+
+.ant-pagination-item-active a {
+  background-color: #1890ff;
+  border-color: #1890ff; 
+  color: #fff; 
+}
+.ant-input {
+  width: 100%; 
+  font-size: 14px; 
+}
+.ant-btn-primary {
+  background-color: #1890ff; 
+  border-color: #1890ff; 
+  color: #fff; 
+}
+
+.ant-btn-danger {
+  background-color: #ff4d4f; 
+  border-color: #ff4d4f; 
+  color: #fff; 
+}
+.custom-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+.custom-table td {
+  line-height: 1.5;
+}
+.custom-table td {
+  padding: 10px;
+  text-align: center;
+}
+.ant-table-column-sorter-up.active,
+.ant-table-column-sorter-down.active {
+  color: #1890ff;
+}
+
+.add-room-button {
+  float: right;
+  margin-bottom: 16px;
+}
+
+.add-room-button {
+  float: right;
+  margin-bottom: 16px;
+}

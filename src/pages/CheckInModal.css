@@ -1,0 +1,48 @@
+.checkInModal .ant-modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .selectAllToggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .bookingCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .bookingCard {
+    width: calc(50% - 10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .bookingCard.selected {
+    border-color: #4CAF50; /* Green to indicate selection */
+    box-shadow: 0 0 14px #4CAF50;
+  }
+  
+  .bookingCard .cardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .roomDetails p {
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .bookingCard {
+      width: 100%;
+    }
+  }
+  

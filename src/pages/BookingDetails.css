@@ -1,0 +1,258 @@
+.bookingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.bookingForm {
+  width: 72%;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown {
+  width: 200px;
+}
+
+.bookingForm .ant-typography {
+  margin-bottom: 16px;
+}
+
+.customField {
+  margin-bottom: 16px;
+}
+
+.bookingSummary {
+  width: 23%;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Set the background-color with transparency */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summaryHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.summaryTable {
+  width: 100%;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summaryRow.total {
+  margin-top: 16px;
+  border-top: 2px solid #eaeaea;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.summaryRow.pending {
+  color: #ff6b6b;
+}
+
+hr {
+  margin: 8px 0;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.footerContainer {
+  margin-top: 20px;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer .ant-btn.ant-btn-outline {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.footerContainer .ant-btn.ant-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.upload-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 24px;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+
+.upload-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.input-number-custom .ant-input-number {
+  height: 40px;
+  font-size: 16px;
+}
+
+.input-number-custom .ant-input-number-input {
+  height: 40px;
+}
+.customDatePickerWidth {
+  width: 150px;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ant-card {
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.ant-card-head {
+  background-color: #1890ff;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.ant-card-head-title {
+  font-size: 18px;
+}
+
+.ant-card-body {
+  padding: 16px;
+}
+
+.guest-identification {
+  margin-top: 20px;
+}
+
+.footerContainer {
+  margin-top: 20px;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer .ant-btn.ant-btn-outline {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.footerContainer .ant-btn.ant-btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.upload-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 24px;
+  color: #1890ff;
+  margin-bottom: 8px;
+}
+
+.upload-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.input-number-custom .ant-input-number {
+  height: 40px;
+  font-size: 16px;
+}
+
+.input-number-custom .ant-input-number-input {
+  height: 40px;
+}
+
+.customDatePickerWidth {
+  width: 150px;
+}
+.cardContainer {
+  width: 295%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardContainer .ant-row {
+  margin-bottom: 10px;
+}
+
+.cardContainer .ant-form-item-label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.cardContainer .ant-form-item {
+  margin-bottom: 10px;
+}
+
+.cardContainer .ant-col {
+  padding: 0 8px;
+}
+
+.cardContainer .ant-typography {
+  color: #333;
+}
+
+.cardContainer .ant-input,
+.cardContainer .ant-select-selector {
+  max-width: 100%;
+}

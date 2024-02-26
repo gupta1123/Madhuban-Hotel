@@ -1,0 +1,497 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+.room-filters {
+  display: contents;
+}
+.bookings-wrapper {
+  padding: 16px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.ant-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ant-pagination-item,
+.ant-pagination-item-link {
+  border-radius: 50%;
+  border: none;
+  background-color: #f0f2f5;
+}
+
+.ant-pagination-item-active {
+  border-color: #1890ff;
+  font-weight: bold;
+}
+
+.create-booking-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.booking-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.room-chips,
+.date-picker-container,
+.counter-container {
+  text-align: left;
+}
+
+.centered-table .ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.centered-table .ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.centered-table .ant-table-tbody > tr > td {
+  color: #595959;
+}
+
+.centered-table .ant-table-tbody > tr:hover > td {
+  background-color: #f5f5f5;
+}
+
+.number-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-container {
+  background-color: #fff;
+  border-top: 1px solid #d9d9d9;
+  padding: 16px;
+  text-align: right;
+}
+
+.proceed-button {
+  margin-right: 16px;
+  background-color: #1072c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+  background-color: #005baa;
+}
+
+.create-booking-header {
+  font-size: 20px;
+  color: #a9a9a9;
+  margin-bottom: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.booking-filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.booking-filters-container .ant-btn {
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.selected-filter-button {
+  background-color: #1890ff;
+  color: #fff;
+  border-color: #1890ff;
+}
+
+.filter-button {
+  background-color: #f0f2f5;
+  color: #595959;
+  border-color: #d9d9d9;
+}
+
+.date-picker-container,
+.counter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.counter-label,
+.check-in-label,
+.check-out-label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.number-picker {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.number-picker .ant-btn {
+  padding: 0 10px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.counter-value {
+  min-width: 30px;
+  text-align: center;
+}
+
+.custom-footer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px;
+  background-color: #fff;
+  border-top: 1px solid #d9d9d9;
+}
+
+.custom-footer .proceed-button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #1072c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-footer .proceed-button:hover {
+  background-color: #005baa;
+}
+.proceed-button {
+  margin-right: 16px;
+  background-color: #1072c2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(16, 114, 194, 0.2);
+  outline: none;
+
+  text-transform: uppercase;
+}
+
+.proceed-button:hover {
+  background-color: #005baa;
+  transform: scale(1.05);
+}
+
+.room-type-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 16px;
+}
+
+.room-type-buttons .ant-btn {
+  margin-right: 8px;
+}
+
+.room-type-buttons .selected-room-type {
+  background-color: #1890ff;
+  color: white;
+  border-color: #1890ff;
+}
+
+.room-filters {
+  display: flex;
+  justify-content: flex-end;
+}
+.room-filters .filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.room-filters .filter-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.room-filters .ant-select:not(:last-child) {
+  margin-right: 16px;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.vertical-divider {
+  height: 32px;
+  width: 1px;
+  background-color: #d9d9d9;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.ant-picker {
+  width: 90%;
+}
+
+.ant-col {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.ant-select {
+  margin-right: 8px;
+}
+
+.ant-select-selection-search {
+  display: none;
+}
+
+.reserved-row {
+  background-color: lightyellow;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #ddd;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+th {
+  background-color: #f8f8f8;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 200px;
+}
+
+.room-containers {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.room-container {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.room-container:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.5px);
+  z-index: 1000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.page-link:hover {
+  background-color: #f8f8f8;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-number {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  background: transparent;
+  cursor: pointer;
+}
+
+.page-number.active,
+.page-number:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.page-number:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.search-bar {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 200px;
+  display: block;
+}
+
+.edit-actions,
+.view-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ant-input {
+  max-width: 100%;
+  white-space: normal;
+}
+.table-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.ant-table-thead th {
+  background-color: #f0f0f0; 
+  color: #333; 
+}
+.ant-table-tbody tr:hover {
+  background-color: #e6f7ff; 
+  cursor: pointer; 
+}
+.ant-pagination {
+  text-align: center;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next {
+  border-color: #1890ff; 
+}
+
+.ant-pagination-item-active a {
+  background-color: #1890ff; 
+  border-color: #1890ff; 
+  color: #fff;
+}
+.ant-input {
+  width: 100%; 
+  font-size: 14px; 
+}
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff; 
+  color: #fff; 
+}
+.ant-btn-danger {
+  background-color: #ff4d4f; 
+  border-color: #ff4d4f; 
+  color: #fff; 
+}
+.custom-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+.custom-table td {
+  line-height: 1.5;
+}
+.custom-table td {
+  padding: 10px;
+  text-align: center;
+}
+.ant-table-column-sorter-up.active,
+.ant-table-column-sorter-down.active {
+  color: #1890ff;
+}
+
+.add-room-button {
+  float: right;
+  margin-bottom: 16px;
+}
+
+.add-room-button {
+  float: right;
+  margin-bottom: 16px;
+}

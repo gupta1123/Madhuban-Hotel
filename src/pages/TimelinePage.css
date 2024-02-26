@@ -1,0 +1,45 @@
+/* Styles for the Booking Timeline */
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.header select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 days in a week */
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.booking-slot {
+  background-color: #e3f2fd;
+  border-left: 5px solid #2196f3;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-slot:hover {
+  background-color: #bbdefb;
+}
+
+/* Additional styles for responsiveness, transitions, etc. */
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(1, 1fr); /* Stack on small screens */
+  }
+}
+
+/* You can add more styles for hover effects, active states, and different room types. */
